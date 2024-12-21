@@ -3,8 +3,8 @@ import yt_dlp
 link = input("Paste Link : ")
 
 ydl_opts = {
-    'format': 'best',  # Download the best quality available
-    'outtmpl': '%(title)s.%(ext)s'  # Output file template
+    'format': 'best',
+    'outtmpl': '%(title)s.%(ext)s'
 }
 
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
